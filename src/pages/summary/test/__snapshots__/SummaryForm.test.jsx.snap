@@ -21,7 +21,7 @@ exports[`should get a snapshot 1`] = `
           title=""
         >
           <span>
-            I agree to 
+            I agree to
             <span
               style="color: blue;"
             >
