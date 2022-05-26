@@ -3,6 +3,9 @@
 exports[`should get a snapshot 1`] = `
 <DocumentFragment>
   <div>
+    <div
+      class="row"
+    />
     <form
       class=""
     >
