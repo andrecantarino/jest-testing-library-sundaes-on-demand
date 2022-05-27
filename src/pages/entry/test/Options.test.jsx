@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { element } from "prop-types";
 import Options from "../Options";
+import { OrderDetailsProvider } from "../../../context/OrderDetails";
 
 test("display image for each scoop option from server", async () => {
-  render(<Options optionType="scoops" />);
+  render(<Options optionType="scoops" />, { wrapper: OrderDetailsProvider });
 
   //find images
   const scoopImages = await screen.findAllByRole("img", { name: /scoop$/i });
@@ -15,7 +15,7 @@ test("display image for each scoop option from server", async () => {
 });
 
 test("display image for each toppings option from server", async () => {
-  render(<Options optionType="toppings" />);
+  render(<Options optionType="toppings" />, { wrapper: OrderDetailsProvider });
 
   //find images
   const toppingsImages = await screen.findAllByRole("img", {
