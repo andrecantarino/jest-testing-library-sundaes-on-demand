@@ -5,7 +5,8 @@ import ToppingOption from "./ToppingOption";
 import { Row } from "react-bootstrap";
 import AlertBanner from "../common/AlertBanner";
 import { pricePerItem } from "../../constants";
-import { useOrderDetails } from "../../context/OrderDetails";
+import { useOrderDetails } from "../../contexts/OrderDetails";
+import { formatCurrency } from "../../utilities";
 
 const Options = ({ optionType }) => {
   const [items, setItems] = useState([]);
@@ -40,7 +41,7 @@ const Options = ({ optionType }) => {
   return (
     <>
       <h2>{title}</h2>
-      <p>{pricePerItem[optionType]} each</p>
+      <p>{formatCurrency(pricePerItem[optionType])} each</p>
       <p>
         {title} total: {orderDetails.totals[optionType]}
       </p>

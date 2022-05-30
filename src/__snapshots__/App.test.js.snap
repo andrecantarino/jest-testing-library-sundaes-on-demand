@@ -6,11 +6,14 @@ exports[`should get a snapshot 1`] = `
     class="container"
   >
     <div>
+      <h1>
+        Design Your Sundae!
+      </h1>
       <h2>
         Scoops
       </h2>
       <p>
-        2 each
+        $2.00 each
       </p>
       <p>
         Scoops total: $0.00
@@ -22,7 +25,7 @@ exports[`should get a snapshot 1`] = `
         Toppings
       </h2>
       <p>
-        1.5 each
+        $1.50 each
       </p>
       <p>
         Toppings total: $0.00
@@ -30,6 +33,16 @@ exports[`should get a snapshot 1`] = `
       <div
         class="row"
       />
+      <h2>
+        Grand total: $0.00
+      </h2>
+      <button
+        class="btn btn-primary"
+        disabled=""
+        type="button"
+      >
+        Order Sundae!
+      </button>
     </div>
   </div>
 </DocumentFragment>
