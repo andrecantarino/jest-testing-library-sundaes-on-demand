@@ -12,7 +12,6 @@ exports[`should get a snapshot 1`] = `
         <input
           class="form-check-input"
           id="terms-and-conditions"
-          role="checkbox"
           type="checkbox"
         />
         <label
@@ -25,7 +24,7 @@ exports[`should get a snapshot 1`] = `
             <span
               style="color: blue;"
             >
-              Terms and conditions
+               Terms and Conditions
             </span>
           </span>
         </label>
@@ -34,7 +33,6 @@ exports[`should get a snapshot 1`] = `
     <button
       class="btn btn-primary"
       disabled=""
-      role="button"
       type="submit"
     >
       Confirm order

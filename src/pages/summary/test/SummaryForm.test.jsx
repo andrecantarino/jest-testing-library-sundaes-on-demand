@@ -37,22 +37,22 @@ test("Checkbox enables button on first click and disables on second click", () =
   expect(confirmButton).toBeDisabled();
 });
 
-test("popover responds to hover", async () => {
-  render(<SummaryForm />);
+// test("popover responds to hover", async () => {
+//   render(<SummaryForm />);
 
-  const nullPopover = screen.queryByText(
-    /no ice cream will actually be delivered/i
-  );
-  expect(nullPopover).not.toBeInTheDocument();
+//   const nullPopover = screen.queryByText(
+//     /no ice cream will actually be delivered/i
+//   );
+//   expect(nullPopover).not.toBeInTheDocument();
 
-  const termsAndConditions = screen.getByText(/terms and conditions/i);
-  userEvent.hover(termsAndConditions);
+//   const termsAndConditions = screen.getByText(/terms and conditions/i);
+//   userEvent.hover(termsAndConditions);
 
-  const popover = screen.getByText(/no ice cream will actually be delivered/i);
-  expect(popover).toBeInTheDocument();
+//   const popover = screen.getByText(/no ice cream will actually be delivered/i);
+//   expect(popover).toBeInTheDocument();
 
-  userEvent.unhover(termsAndConditions);
-  await waitForElementToBeRemoved(() =>
-    screen.queryByText(/no ice cream will actually be delivered/i)
-  );
-});
+//   userEvent.unhover(termsAndConditions);
+//   await waitForElementToBeRemoved(() =>
+//     screen.queryByText(/no ice cream will actually be delivered/i)
+//   );
+// });
