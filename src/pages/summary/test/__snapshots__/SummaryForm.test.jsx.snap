@@ -10,6 +10,7 @@ exports[`should get a snapshot 1`] = `
         class="form-check"
       >
         <input
+          aria-label="I agree to terms and conditions"
           class="form-check-input"
           id="terms-and-conditions"
           type="checkbox"

@@ -1,7 +1,8 @@
 import {
   render,
   screen,
-  waitForElementToBeRemoved,
+  // waitFor,
+  // waitForElementToBeRemoved,
 } from "@testing-library/react";
 import SummaryForm from "../SummaryForm";
 import userEvent from "@testing-library/user-event";
@@ -45,11 +46,20 @@ test("Checkbox enables button on first click and disables on second click", () =
 //   );
 //   expect(nullPopover).not.toBeInTheDocument();
 
-//   const termsAndConditions = screen.getByText(/terms and conditions/i);
+//   const termsAndConditions = screen.getByLabelText(
+//     /i agree to terms and conditions/i
+//   );
 //   userEvent.hover(termsAndConditions);
 
-//   const popover = screen.getByText(/no ice cream will actually be delivered/i);
-//   expect(popover).toBeInTheDocument();
+//   // const popover = screen.getByLabelText(
+//   //   /no ice cream will actually be delivered/i
+//   // );
+//   // expect(popover).toBeInTheDocument();
+
+//   const tooltipMessage = await screen.findByRole("tooltip", {
+//     name: /no ice cream will actually be delivered/i,
+//   });
+//   expect(tooltipMessage).toBeInTheDocument();
 
 //   userEvent.unhover(termsAndConditions);
 //   await waitForElementToBeRemoved(() =>
